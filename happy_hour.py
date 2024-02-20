@@ -1,5 +1,18 @@
 import datetime
 
+'''
+since i'm not supposed to modify the test file... this would include the 
+parent directory and thus allow the happy_hour.py file to be found
+
+# # include parent directory in the path
+# import sys
+# from os.path import dirname, abspath
+# sys.path.append(dirname(dirname(abspath(__file__))))
+
+
+'''
+
+
 def is_happy_hour(user_date, user_time):
     today = datetime.datetime.strptime(user_date, "%Y-%m-%d").date()
     user_time = datetime.datetime.strptime(user_time, "%H:%M").time()
